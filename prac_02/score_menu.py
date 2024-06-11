@@ -1,5 +1,7 @@
 """
 Score menu program
+This is the updated version of the score
+program with the menu
 """
 
 MENU = "(G)et a valid score (mush be between 0-100 inclusive)\n(P)rint result\n(S)how stars\n(Q)uit"
