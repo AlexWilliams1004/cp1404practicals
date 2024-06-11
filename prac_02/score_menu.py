@@ -2,7 +2,6 @@
 Score menu program
 """
 
-
 MENU = "(G)et a valid score (mush be between 0-100 inclusive)\n(P)rint result\n(S)how stars\n(Q)uit"
 
 
