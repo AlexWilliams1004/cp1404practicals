@@ -5,7 +5,6 @@ Alex Williams
 
 Estimate: 15 minutes
 Actual: 30
-this is a collection of words of nice words this is a fun thing it is
 """
 
 word_to_count = {}
