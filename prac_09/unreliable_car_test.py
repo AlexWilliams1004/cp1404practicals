@@ -7,6 +7,7 @@ from unreliable_car import UnreliableCar
 
 
 def main():
+    """Create an unreliable car object with 50% reliability."""
     unreliable_car = UnreliableCar("Hilux", 100, 50)
     for i in range(10):
         distance_driven = unreliable_car.drive(20)
