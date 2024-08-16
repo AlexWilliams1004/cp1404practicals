@@ -1,13 +1,15 @@
 """
-CP1404/CP5632 - Practical
-Broken program to determine score status
-"""
+Score - CP1404/CP5632 Practicals
 
+    - Alex Williams 16.08.2024 -
+
+"""
 
 import random
 
 
 def main():
+    """Main function."""
     score = float(input("Enter score: "))
     result = determine_result(score)
     print(result)
@@ -17,14 +19,15 @@ def main():
 
 
 def determine_result(score):
+    """Determine result from score."""
     if score < 0 or score > 100:
         return "Invalid score"
-    elif score >= 90:
-        return "Excellent"
-    elif score >= 50:
-        return "Passable"
-    else:
+    elif score < 50:
         return "Bad"
+    elif score < 90:
+        return "Pass"
+    else:
+        return "Excellent"
 
 
 main()

@@ -7,13 +7,16 @@ program with the menu
 
 """
 
-MENU = "(G)et a valid score (mush be between 0-100 inclusive)\n(P)rint result\n(S)how stars\n(Q)uit"
+MENU = """(G)et a valid score (mush be between 0-100 inclusive)
+(P)rint result
+(S)how stars
+(Q)uit"""
 
 
 def main():
     """Main program."""
     print(MENU)
-    choice = input(">>>").upper()
+    choice = input(">>> ").upper()
     while choice != "Q":
         if choice == "G":
             score = get_valid_score("Score: ", 0, 100)
@@ -24,7 +27,7 @@ def main():
         else:
             print_stars(score)
         print(MENU)
-        choice = input(">>>").upper()
+        choice = input(">>> ").upper()
     print("Bye!")
 
 
