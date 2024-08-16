@@ -1,38 +1,27 @@
 """
-Loops
-Example first, then labelled questions
-"""
+Loops - CP1404 Practicals
 
-for i in range(1, 21, 2):
-    print(i, end=' ')
-print()
+    - Alex Williams 16.08.2024 -
 
 """
-a. count in 10s from 0 to 100
-"""
+# a
 for i in range(0, 101, 10):
     print(i, end=' ')
-print()
 
-"""
-b. count down from 20 to 1
-"""
+# b
 for i in range(20, 0, -1):
     print(i, end=' ')
 print()
 
-"""
-c. print n stars. Ask the user for a number, then print that many stars(*), all on one line.
-"""
+# c
 number = int(input("Number: "))
 for n in range(number):
     print("*", end='')
 print()
 
-"""
-d. print n lines of increasing stars."""
+# d
 number = int(input("Number: "))
-for n in range(number):
-    for i in range(n + 1):
+for i in range(number):
+    for j in range(i + 1):
         print("*", end='')
     print()
