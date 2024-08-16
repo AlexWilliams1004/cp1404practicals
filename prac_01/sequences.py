@@ -20,6 +20,7 @@ MENU = """1. Show the even numbers from x to y
 
 
 def main():
+    """Main function."""
     x = int(input("x: "))
     y = int(input("y: "))
     print(MENU)
@@ -38,11 +39,13 @@ def main():
 
 
 def display_even_numbers(x, y):
+    """Display the even numbers between x and y."""
     for i in range(x + x % 2, y + 1, 2):
         print(i, end=' ')
 
 
 def display_odd_numbers(x, y):
+    """Display the odd numbers between x and y."""
     if x % 2 != 0:
         for i in range(x, y + 1, 2):
             print(i, end=' ')
@@ -52,6 +55,7 @@ def display_odd_numbers(x, y):
 
 
 def display_numbers_squared(x, y):
+    """Display all the numbers squared."""
     for i in range(x, y + 1):
         print(i ** 2, end=' ')
 
