@@ -4,13 +4,15 @@ Menu Driven Number Sequences - CP1404 Practicals
     - Alex Williams 16.08.2024 -
 
 """
-x = int(input("x: "))
-y = int(input("y: "))
-menu = """1. Show the even numbers from x to y
+MENU = """1. Show the even numbers from x to y
 2. Show the odd numbers from x to y
 3. Show the squares of the numbers from x to y (e.g., if x, y = 2, 4 then: 4 9 16)
 4. Exit the program"""
-print(menu)
+
+x = int(input("x: "))
+y = int(input("y: "))
+
+print(MENU)
 choice = input(">>> ")
 while choice != "4":
     if choice == "1":
@@ -27,6 +29,6 @@ while choice != "4":
         for i in range(x, y + 1):
             print(i ** 2, end=' ')
     print()
-    print(menu)
+    print(MENU)
     choice = input(">>> ")
 print("Program finished")
