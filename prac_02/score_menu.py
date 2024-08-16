@@ -1,13 +1,17 @@
 """
-Score menu program
+Score menu program - CP1404 Practicals
 This is the updated version of the score
 program with the menu
+
+    - Alex Williams 16.08.2024 -
+
 """
 
 MENU = "(G)et a valid score (mush be between 0-100 inclusive)\n(P)rint result\n(S)how stars\n(Q)uit"
 
 
 def main():
+    """Main program."""
     print(MENU)
     choice = input(">>>").upper()
     while choice != "Q":
@@ -18,13 +22,14 @@ def main():
             result = determine_result(score)
             print(result)
         else:
-            show_stars(score)
+            print_stars(score)
         print(MENU)
         choice = input(">>>").upper()
     print("Bye!")
 
 
 def get_valid_score(prompt, low, high):
+    """Get valid score."""
     score = int(input(prompt))
     while score < low or score > high:
         print("invalid score")
@@ -33,15 +38,17 @@ def get_valid_score(prompt, low, high):
 
 
 def determine_result(score):
-    if score >= 90:
-        return "Excellent"
-    elif score >= 50:
-        return "Passable"
-    else:
+    """Determine result from score."""
+    if score < 50:
         return "Bad"
+    elif score < 90:
+        return "Pass"
+    else:
+        return "Excellent"
 
 
-def show_stars(score):
+def print_stars(score):
+    """Print score length of stars."""
     print(f"{'*' * score}")
 
 
