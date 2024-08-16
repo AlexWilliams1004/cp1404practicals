@@ -1,6 +1,15 @@
 """
 Menu Driven Number Sequences - CP1404 Practicals
 
+This program will ask the user for integer inputs that will
+be stored in x and y variables, then display a menu that
+will allow the user to choose from the following options:
+
+1. Show the even numbers from x to y
+2. Show the odd numbers from x to y
+3. Show the squares of the numbers from x to y (e.g., if x, y = 2, 4 then: 4 9 16)
+4. Exit the program
+
     - Alex Williams 16.08.2024 -
 
 """
