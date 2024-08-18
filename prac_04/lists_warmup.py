@@ -1,6 +1,8 @@
 """
-CP1401 Practical 4 - Lists Warmup
-Alex Williams
+Lists Warmup - CP1401 Practicals
+
+    - Alex Williams 18.08.2024 -
+
 """
 
 numbers = [3, 1, 4, 1, 5, 9, 2]
@@ -18,6 +20,7 @@ numbers = [3, 1, 4, 1, 5, 9, 2]
 numbers[0] = "ten"
 numbers[-1] = 1
 print(numbers[2:])
-value = 9
-if value in numbers:
-    print(f"{value} is an element of numbers")
+if 9 in numbers:
+    print(f"9 is an element of numbers")
+if '9' in numbers:
+    print(f"'9' is an element of numbers")
