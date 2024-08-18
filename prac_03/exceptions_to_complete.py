@@ -1,8 +1,10 @@
 """
-CP1404/CP5632 - Practical
+Exceptions to Complete - CP1404 Practicals
 Fill in the TODOs to complete the task
-"""
 
+    - Alex Williams 18.08.2024 -
+
+"""
 is_finished = False
 while not is_finished:
     try:
