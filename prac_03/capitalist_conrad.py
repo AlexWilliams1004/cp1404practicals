@@ -23,9 +23,9 @@ FILENAME = "capitalist"
 
 number_of_days = 0
 price = INITIAL_PRICE
-print(f"Starting price: ${price:,.2f}")
 
 out_file = open(FILENAME, 'w')
+print(f"Starting price: ${price:,.2f}", file=out_file)
 while MIN_PRICE <= price <= MAX_PRICE:
     price_change = 0
     # generate a random integer of 1 or 2
