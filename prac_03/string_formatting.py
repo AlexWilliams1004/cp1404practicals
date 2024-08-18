@@ -1,9 +1,13 @@
 """
-CP1404/CP5632 - Practical
+String Formatting - CP1404 Practicals
+
 Various examples of using Python string formatting.
 (We prefer f-strings in this subject.)
 Want to read more about it?
 https://docs.python.org/3/library/string.html#formatstrings
+
+    - Alex Williams 18.08.2024 -
+
 """
 
 name = "Gibson L-5 CES"
