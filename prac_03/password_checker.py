@@ -1,6 +1,8 @@
 """
-CP1404/CP5632 - Practical
-Password checker "skeleton" code to help you get started
+Password Checker - CP1404 Practicals
+
+    - Alex Williams 18.08.2024 -
+
 """
 
 MIN_LENGTH = 2
