@@ -1,7 +1,8 @@
 """
 CP1404/CP5632 Practical
 Updated cumulative total income program
-Alex Williams
+    - Alex Williams 10.10.24 -
+
 """
 
 
@@ -21,10 +22,12 @@ def main():
 
 
 def print_report_header():
+    """Print report header."""
     print("\nIncome Report\n-------------")
 
 
 def add_report_total(incomes, number_of_months):
+    """Add monthly totals."""
     totals = []
     total = 0
     for month in range(1, number_of_months + 1):
